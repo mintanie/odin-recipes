@@ -2,6 +2,12 @@
     color: black;
 }
 
+#logo {
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
 h1 {
     text-align: center;
     color: #ac3973;
@@ -14,4 +20,29 @@ h1 {
 body {
     background-color: #f7ebdf;
     color: #212842;
+}
+
+ul {
+    margin-left: 0px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    border:2px solid #ac3973;
+
+}
+
+.recipes-links a {
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.recipes-links a:hover {
+    /*farbe wenn man darauf clickt*/
+    background-color: #ac3973;
 }
