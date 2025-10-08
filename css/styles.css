@@ -8,6 +8,17 @@
     width: 200px;
 }
 
+.titlebox {
+    display: flex;
+    margin: 0px auto;
+    transform: rotate(-90deg);
+}
+
+.onion {
+    display: flex;
+    margin: 0px auto;
+}
+
 h1 {
     text-align: center;
     color: #ac3973;
@@ -22,20 +33,21 @@ body {
     color: #212842;
 }
 
+nav {
+    padding: 0px;
+}
+
+ol,
 ul {
-    margin-left: 0px;
-    display: flex;
-    list-style: none;
-    text-align: center;
+    margin-left: -10px;
 }
 
 li {
     display: flex;
     margin: 0 auto;
-    text-align: center;
-    border:2px solid #ac3973;
+    list-style-type: circle;
+} 
 
-}
 
 .recipes-links a {
     padding: 1em 2em;
@@ -45,4 +57,8 @@ li {
 .recipes-links a:hover {
     /*farbe wenn man darauf clickt*/
     background-color: #ac3973;
+}
+
+.recipes_box {
+    border: 2px solid #ac3973;
 }
