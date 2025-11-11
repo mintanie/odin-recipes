@@ -22,7 +22,6 @@
   transform-origin: center center;
 }
 
-
 .onion {
     display: flex;
     margin: 0px auto;
@@ -43,11 +42,12 @@ body {
     color: #212842;
 }
 
-.recipes-links a {
-    display: inline-block;
+.recipes-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     margin: 0px auto;
     padding: 1.5em 3em; /* größe von hover*/
-    text-decoration: none;
 }
 
 .recipes-links a:hover {
@@ -56,16 +56,41 @@ body {
 }
 
 .recipes_box {
-    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
     border: 2px solid #ac3973;
+    border-radius: 15px;
     padding: 20px;
-    margin-top: 100px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 2px solid #ac3973;
+    border-radius: 15px;
 }
 
 .home a:hover{
     background-color: #ac3973;
     display: flex;
-    margin: 0px auto;
+    justify-content: center;
+    align-self: center;
     border: 2px solid #ac3973;
 }
 
+@media all and (max-width: 600px) {
+    .recipes-links {
+        flex-wrap: wrap;
+    }
+    .recipes_box > li {
+        flex: 1 1 100%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .recipes_box > li {
+        flex: 1 1 100%;
+    }
+}
